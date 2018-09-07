@@ -142,3 +142,108 @@
 #     print(num, "是阿姆斯特朗数")
 # else:
 #     print(num, "不是阿姆斯特朗数")
+
+
+# 求最大公约数
+
+# def hcf(x, y):
+#     if x > y:
+#         smaller = y
+#     else:
+#         smaller = x
+#     for i in range(1, smaller+1):
+#         if(x % i == 0)and(y % i == 0):
+#             hcf = i
+#     return hcf
+
+
+# num1 = int(input('请输入一个数：'))
+# num2 = int(input('请输入一个数：'))
+
+# print(num1, "和", num2, "的最大公约数为", hcf(num1, num2))
+
+
+# 求最小公倍数
+
+# def lcm(x, y):
+
+#    if x > y:
+#        greater = x
+#    else:
+#        greater = y
+
+#    while(True):
+#        if((greater % x == 0) and (greater % y == 0)):
+#            lcm = greater
+#            break
+#        greater += 1
+
+#    return lcm
+
+# num1 = int(input("输入第一个数字: "))
+# num2 = int(input("输入第二个数字: "))
+
+# print( num1,"和", num2,"的最小公倍数为", lcm(num1, num2))
+
+
+# 简单计算器的实现
+
+# 定义函数
+# def add(x, y):
+#     """相加"""
+
+#     return x + y
+
+
+# def subtract(x, y):
+#     """相减"""
+
+#     return x - y
+
+
+# def multiply(x, y):
+#     """相乘"""
+
+#     return x * y
+
+
+# def divide(x, y):
+#     """相除"""
+
+#     return x / y
+
+
+# # 用户输入
+# print("选择运算：")
+# print("1、相加")
+# print("2、相减")
+# print("3、相乘")
+# print("4、相除")
+
+# choice = input("输入你的选择(1/2/3/4):")
+
+# num1 = int(input("输入第一个数字: "))
+# num2 = int(input("输入第二个数字: "))
+
+# if choice == '1':
+#     print(num1, "+", num2, "=", add(num1, num2))
+
+# elif choice == '2':
+#     print(num1, "-", num2, "=", subtract(num1, num2))
+
+# elif choice == '3':
+#     print(num1, "*", num2, "=", multiply(num1, num2))
+
+# elif choice == '4':
+#     print(num1, "/", num2, "=", divide(num1, num2))
+# else:
+#     print("非法输入")
+
+
+# 生成日历
+# import calendar
+
+# yy = int(input('输入年份：'))
+# mm = int(input('输入月份：'))
+
+# print(calendar.month(yy, mm))
