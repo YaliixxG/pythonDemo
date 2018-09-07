@@ -66,14 +66,79 @@
 # 判断是否为质数
 # 质数是大于1的自然数，并且只能被1和自身整除
 
-num = int(input('请输入一个数字：'))
+# num = int(input('请输入一个数字：'))
 
-if num > 0:
-    for i in range(2, num):
-        if(num % i == 0):
-            print(num, '不是质数')
-            break
-    else:
-        print(num, '是质数')
-else:
-    print(num, '不是质数')
+# if num > 0:
+#     for i in range(2, num):
+#         if(num % i == 0):
+#             print(num, '不是质数')
+#             break
+#     else:
+#         print(num, '是质数')
+# else:
+#     print(num, '不是质数')
+
+
+# 阶乘实例
+
+# num = int(input('请输入一个数：'))
+
+# factorial = 1
+
+# if(num < 0):
+#     print('不符合阶乘条件')
+# elif(num == 0):
+#     print('0的阶乘为1')
+# else:
+#     for i in range(1, num+1):
+#         factorial = factorial * i
+#     print('%d的阶乘为%d' % (num, factorial))
+
+
+# 九九乘法表
+
+# for i in range(1, 10):
+#     for j in range(1, i+1):
+#         print('{}X{}={}\t'.format(i, j, i*j), end="")
+#     print()
+
+
+# 斐波那契数列
+
+# num = int(input('你想要几项：'))
+
+# n1 = 0
+# n2 = 1
+# count = 2
+
+# if(num <= 0):
+#     print('输入值必须为正整数！')
+# elif(num == 1):
+#     print(n1)
+# else:
+#     print(n1, ',', n2, end=' , ')
+#     while(count < num):
+#         nth = n1 + n2
+#         print(nth, end=" , ")
+#         n1 = n2
+#         n2 = nth
+#         count += 1
+
+
+# 阿姆斯特朗数
+
+# num = int(input("请输入一个数字: "))
+
+# sum = 0
+# n = len(str(num))
+
+# temp = num
+# while temp > 0:
+#     digit = temp % 10
+#     sum += digit ** n
+#     temp //= 10
+
+# if num == sum:
+#     print(num, "是阿姆斯特朗数")
+# else:
+#     print(num, "不是阿姆斯特朗数")
