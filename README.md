@@ -1,2 +1,3 @@
 # pythonDemo
-一些python的小demo集合
+
+一些关于 python 的小 demo 集合
